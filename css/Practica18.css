@@ -1,0 +1,71 @@
+/*------------- Afecta a todos los elementos ----------------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+/*------------- Afecta el header, footer y contenedor separados con un coma y afecta la anchura y el borde ----------------*/
+header, footer, #contenedor {
+  width: 100%;
+  border-radius: 10px;
+}
+/*------------- Afecta al body en la altura ----------------*/
+body {
+  height: 100vh;
+}
+header {
+  height: 30%;
+  background: #8FDFFC;
+  border: black 2px solid;
+}
+/*------------- Afecta al nav en el padding, el margin, la altura, el color y el border ----------------*/
+nav {
+  padding: 1.5%;
+  margin-top: 5.3%;
+  margin-right: 2%;
+  margin-left: 2%;
+  height: 25%;
+  background: #43BAE7;
+  border: black 2px solid;
+  border-radius: 10px;
+}
+footer {
+  height: 10%;
+  background: #43BAE7;
+  border: black 2px solid;
+}
+#contenedor {
+  display: flex;
+  height: 60%;
+  justify-content: space-around;
+}
+aside, section {
+    height: 90%; margin-top: 1.5%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+/*------------- Afecta al Aside en la anchura y el color ----------------*/
+aside {
+  width: 45%;
+  background: #8FDFFC;
+}
+/*------------- Afecta al Section en la anchura y el color  ----------------*/
+section {
+  width: 50%;
+  background: #8FDFFC;
+}
+article.segundo {
+  margin: 2em;
+  width: 75%;
+  height: 35%;
+  background: #43BAE7;
+}
+/*------------- Afecta al Article en el margin, anchura, altura, color de fondo, alineado y el borde ----------------*/
+article {
+  margin: 2em;
+  width: 75%;
+  height: 35%;
+  background: #43BAE7;
+  justify-content: space-around;
+  border: black 2px solid;
+  border-radius: 10px;
+}

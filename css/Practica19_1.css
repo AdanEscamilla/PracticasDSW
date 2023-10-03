@@ -1,0 +1,102 @@
+*{
+    font-family: 'Exo 2', sans-serif;
+  }
+  h2::first-letter {
+    font-size: 50px; color:#0CE14C; text-transform: uppercase;
+  }
+  h2 + p {
+    text-indent: 2em;
+  }
+  a::before {
+    content: "Soy un elemento before :D - ";
+  }
+  a, abbr{
+    text-decoration: none;
+  }
+  a:link {
+    color: red;
+    font-size: large;
+    content: "Visitame!!!";
+  }
+  abbr::before {
+    content: "Abreviatura "; color: #F91616; font-style: italic;
+  }
+  .circulos li{
+    list-style-type: circle;
+  }
+  ul:nth-last-child(2n+1) {list-style-image: url("../images/estrella1.png");}
+  table{
+    border: 1px solid;
+    border-color: #909497;
+    padding: 8px;
+    transition: all 1s;
+  }
+  p {transition: all 1s;}
+  p:hover {
+    color: green; 
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  td{
+    text-align: right;
+  }
+  th, td{
+    border: 1px solid;
+    border-color: #909497;
+    padding: 0.8em;
+    transition: all 1s;
+  }
+  tr:first-child{
+    background-color: #C5BFBF;
+  }
+  table:hover {
+    transform: rotate(90deg);
+  }
+  tr:nth-of-type(2) > td:hover{background-color: #1035b1 ; width: 4em; height: 3em;}
+  tr:nth-of-type(4) > td:hover{background-color: #F98BA0 ;}
+  tr:nth-of-type(5) > td:hover{background-color: #F63958;}
+  img{
+    height: 18px;
+    float: left;
+  }
+  div{
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    float: left;
+    transition: all 1s;
+  }
+  .cuadrado{
+    background: brown;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .circulo{
+    background: blue;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+  .square{
+    background: black;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .cuadrado:hover{
+    background: red;
+    width: 500px;
+    height: 500px;
+    transform: rotate(275deg);
+  }
+  .circulo:active{
+    background: #F52FCE;
+    border: solid;
+    border-color: #2ECD23;
+  }
+  .square:hover{
+    box-shadow: 5px 5px 5px 10px purple;
+    transform: rotate(135deg);
+    background-color: #2ccaa36c;
+  }
+  

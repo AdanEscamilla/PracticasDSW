@@ -1,0 +1,31 @@
+* {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #555;
+}
+
+#uno p {
+    color: #336699;
+}
+
+a {
+    color: #CC3300;
+}
+
+#uno em {
+    background-color: #FFFFCC;
+    padding: 3px;
+}
+
+.recalcar {
+    background-color: #FFCC99;
+    padding: 3px;
+    border:  1px solid #FF9900;
+}
+
+.dos span {
+    font-weight: bold;
+}

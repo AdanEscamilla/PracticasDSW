@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  #encabezado, #menu, #footer, #contenedor {
+    width: 100%;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  #encabezado, #footer {
+    height: 10%;
+    background: #2CE388 ;
+  }
+  #footer {
+    background: #FE97FA ;
+  }
+  #menu {
+    height: 10%;
+    background: #2BBD4C ;
+    margin-top: 1.5%;
+  }
+  #contenedor {
+    display: flex;
+    height: 65%;
+    justify-content: space-around;
+    border: black 2px dotted;
+    background-color: white;
+    margin-top: 1em;
+  }
+  .article, #contenido {
+    height: 90%; margin-top: 1.5%;
+  }
+  .article {
+    width: 20%;
+    background-color: rgb(255, 174, 0);
+  }
+  #contenido {
+    width: 50%;
+    background-color: rgb(25, 90, 150);
+  }

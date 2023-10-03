@@ -1,0 +1,74 @@
+/*toma la primera linea de texto de los parrafos*/
+p::first-line {
+  color: rgb(125, 76, 80);
+}
+/*toma la primera letra de los parrafos*/
+p::first-letter {
+  font-size: 40px; color:#D5EA24;
+}
+/*pone un elemento antes de otro elemento*/
+h1::before {
+  content: "Soy un elemento before - ";
+}
+/*pone un elemento despues de otro elemento*/
+p::after {
+  content: ".(Soy un elemento after)";
+}
+/*cuando se selecciona un elemento o texto*/
+p::selection {
+  background: pink;
+}
+/*los elementos de un proceso hijo que puede ir de orden de un elemento*/
+tr:nth-child(2n) {
+  background: rgb(70%, 15%, 18%);
+}
+/*los elementos de un proceso hijo que inicia desde el ultimo elemento*/
+tr:nth-last-child(2n+1) {
+  background: #25FCFF;
+}
+/*los elmentos de un proceso hijo de parrafos que inicia desde el ultimo elemento*/
+.primero p:nth-last-child(2n) {
+  background: #CB9E9E;
+}
+/*los elementos de una celda que con condición este vacio*/
+td:empty {
+  background: #F211E8;
+}
+/*los elementos li dentro de ul*/
+ul li {
+  border-bottom: 1px dotted #000;
+  font-size: 50px;
+}
+/*los elementos de un proceso hijo que inicia desde el primer elemento*/
+.sin li:first-child {
+  border-top: 1px dotted #AF0;
+  background-color: #AF0;
+  border-bottom: none;
+  list-style-type: square;
+}
+/*los elementos de un proceso hijo que inicia desde el ultimo elmento*/
+.sin li:last-child {
+  color: #FF0;
+  list-style-type: square;
+}
+/*selecciona el elemento que se seleccione mientras que sea el enesimo hermano del tipo de elemento*/
+.segundo p:nth-of-type(4) {
+  background-color: #A22424;
+}
+/*selecciona el elemnto que se seleccione mientras que sea el enesimo hermano del tipo del elemento que inicia desde el ultimo elemento*/
+em:nth-last-of-type(2)
+{
+  background: rgb(125, 178, 125);
+}
+.vwvh {
+  width: 50vmin;
+  height: 50vmax;
+  background-color: blue;
+  transition: all 1s ease-in-out;
+}
+.vwvh:hover {
+  width: 65vmin;
+  height: 70vmax;
+  background-color: green;
+  transform: scale(2);
+}

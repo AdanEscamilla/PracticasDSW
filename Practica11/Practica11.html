@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 5em;
+        }
+
+        #Boton {
+            width: 10em;    
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Segundo formulario</h1>
+    <form action="Practica11.html" method="get">
+        <label>Nombre: </label>
+        <input type="text" placeholder="No mayor a 50 caracteres" maxlength="50" name="Nombre"><br><br>
+        <label>Apellido: </label>
+        <input type="text" placeholder="No mayor a 50 caracteres" maxlength="50" name="Edad"><br><br>
+        <label>Sexo: </label>
+        <select name="Opcion" id="Opcion">
+            <option value="Mujer">Femenino</option>
+            <option value="Hombre">Masculino</option>
+        </select><br><br>
+        <label>Correo Electrónico</label>
+        <input type="email" value="email"><br><br>
+        <input type="checkbox" value="Leer" name="radio" checked >
+        <label>Deseo recibir información sobre novedades y ofrertas</label><br><br>
+        <input type="checkbox" value="De acuerdo" name="checkbox">
+        <label>Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos.</label><br><br>
+        <input type="submit" value="Enviar" id="Boton"><br><br>
+    </form>
+</body>
+</html>

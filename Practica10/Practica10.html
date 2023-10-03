@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 5em;
+        }
+
+        #Boton {
+            width: 10em;    
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi primer formulario</h1>
+    <form action="Practica10.html" method="get">
+        <label>Nombre: </label>
+        <input type="text" placeholder="No mayor a 10 caracteres" maxlength="10" name="Nombre"><br><br>
+        <label>Edad: </label>
+        <input type="number" max="18" min="10" name="Edad"><br><br>
+        <label>Género: </label>
+        <select name="Opcion" id="Opcion">
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+        </select><br><br>
+        <input type="radio" value="Leer" name="radio" >
+        <label>Leer</label><br><br>
+        <input type="radio" value="Caminar" name="radio">
+        <label>Caminar</label><br><br>
+        <input type="checkbox" value="De acuerdo" name="checkbox">
+        <label>De acuerdo: </label><br><br>
+        <input type="submit" value="Enviar" id="Boton"><br><br>
+        <label>Comentarios: </label>
+        <textarea rows="6" placeholder="Comentarios" name="Comentarios"></textarea>
+    </form>
+</body>
+</html>

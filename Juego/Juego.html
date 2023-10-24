@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="Juego.css">
+    <title>JUEGOS</title>
+</head>
+<body>
+    <header>JUEGOS</header>
+    <h1>ESCOGE UNO DE LOS 2 JUEGOS</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <p>Jugar a las Banderas del Mundo</p>
+        <button class="btn" onclick="comenzarJuego()">JUGAR</button>
+        <p>Jugar a las 7 Maravillas</p>
+        <button class="btn"><a href="../7Maravillas/7maravillas.html">Jugar</a></button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/Alemania.svg" alt="" id="imgBandera">
+        <!-- Es el contenedor de las opciones del juego -->
+        <div class="opciones">
+            <!-- Es el contenedor hijo que contiene una opción de las posibles respuestas para el jugador -->
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <!-- Contiene la opción que puede elegir el jugador -->
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <!-- Es el contenedor hijo que contiene una opción de las posibles respuestas para el jugador -->
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <!-- Contiene la opción que puede elegir el jugador -->
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <!-- Es el contenedor hijo que contiene una opción de las posibles respuestas para el jugador -->
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <!-- Contiene la opción que puede elegir el jugador -->
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+            <!-- Es el contenedor hijo que contiene una opción de las posibles respuestas para el jugador -->
+            <div class="opcion" id="op3" onclick="comprobarRespuesta(3)">
+                <!-- Contiene la opción que puede elegir el jugador -->
+                <div class="letra" id="l3">D</div>
+                <div class="nombre" id="n3">OPCION D</div>
+            </div>
+        </div>
+    </div>
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    <footer>JUEGOS</footer>
+    
+    <script src="Juego.js"></script>
+</body>
+</html>
